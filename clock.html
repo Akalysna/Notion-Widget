@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      color: #37352f;
+    }
+    #clock { font-size: 3rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+  <script>
+    function tick() {
+      document.getElementById('clock').textContent =
+        new Date().toLocaleTimeString('fr-FR');
+    }
+    setInterval(tick, 1000);
+    tick();
+  </script>
+</body>
+</html>
