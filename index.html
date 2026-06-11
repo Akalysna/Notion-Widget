@@ -11,10 +11,21 @@
       font-family: 'Inter', sans-serif;
       color: #37352f;
     }
+    #background {
+      /* position: fixed;
+      top: 0;
+      left: 0; */
+      width: 5em;
+      height: 2rem;
+      background: #292929;
+      z-index: -1;
+      margin-right: 1.5em;
+    }
     #clock { font-size: 3rem; font-weight: 600; }
   </style>
 </head>
 <body>
+  <div id="background"></div>
   <div id="clock"></div>
   <script>
     function tick() {
